@@ -1,0 +1,44 @@
+Script started on Wed Sep 23 00:49:45 2020
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker run -d  --name example ubuntu:16.04
+
+ sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'docker run -d  --name example ubuntu:16.04
+docker: Error response from daemon: Conflict. The container name "/example" is already in use by container "76df3db46fde5e31900994d871c78dbf21898d6975b6ddce31bd7adec1b20464". You have to remove (or rename) that container to be able to reuse that name.
+See 'docker run --help'.
+Input website:
+kaya
+Searching..
+curl: (6) Could not resolve host: kaya
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker container prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+76df3db46fde5e31900994d871c78dbf21898d6975b6ddce31bd7adec1b20464
+
+Total reclaimed space: 0B
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker ps *
+CONTAINER ID	    IMAGE				COMMAND 		 CREATED	     STATUS		 PORTS			  NAMES
+87fed20b95ff	    devopsdockeruh/exec_bash_exercise	"docker-entrypoint.s…"	 49 minutes ago      Up 49 minutes				  suspicious_tereshkova
+5fdc4ef2619b	    postgres:alpine			"docker-entrypoint.s…"	 2 weeks ago	     Up 39 hours	 0.0.0.0:5432->5432/tcp   akipay_tokenizer_db_1
+9abc5bdefd96	    vault				"docker-entrypoint.s…"	 2 weeks ago	     Up 39 hours	 0.0.0.0:8200->8200/tcp   akipay_tokenizer_vault_1
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker ps -a
+CONTAINER ID	    IMAGE				COMMAND 		 CREATED	     STATUS		 PORTS			  NAMES
+87fed20b95ff	    devopsdockeruh/exec_bash_exercise	"docker-entrypoint.s…"	 49 minutes ago      Up 49 minutes				  suspicious_tereshkova
+5fdc4ef2619b	    postgres:alpine			"docker-entrypoint.s…"	 2 weeks ago	     Up 39 hours	 0.0.0.0:5432->5432/tcp   akipay_tokenizer_db_1
+9abc5bdefd96	    vault				"docker-entrypoint.s…"	 2 weeks ago	     Up 39 hours	 0.0.0.0:8200->8200/tcp   akipay_tokenizer_vault_1
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker container prunerun -d  --name example ubuntu:16.04
+
+ sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+3756753e600f53a1c9e4cd81c6929a8bd029b663e65e34a86b2f76db416e925c
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+kayaondul@Kayas-MacBook-Air moocfi-docker % exit
+
+Script done on Wed Sep 23 00:50:52 2020
