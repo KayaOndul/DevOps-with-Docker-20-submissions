@@ -1,0 +1,20 @@
+Script started on Tue Sep 22 23:13:00 2020
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker run -d nginx
+596c8761202eafa0039ad5381d3399fdca702afe1d9a79992901a9c9e888f1f5
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker run -d nginx
+df51e0d554db5df15c51649d4db3eb3b6d93ffe4d7de5b0438899b4ca8ea5300
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker run -d nginx
+8c6f05636c2fe825f7b04bee4fcae918faa679ca7b1c8e94b40335ff9a33244b
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker stop 8c df
+8c
+df
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker ps -a
+CONTAINER ID	    IMAGE		COMMAND 		 CREATED	     STATUS			PORTS			 NAMES
+8c6f05636c2f	    nginx		"/docker-entrypoint.…"	 35 seconds ago      Exited (0) 9 seconds ago				 relaxed_shockley
+df51e0d554db	    nginx		"/docker-entrypoint.…"	 37 seconds ago      Exited (0) 9 seconds ago				 crazy_fermat
+596c8761202e	    nginx		"/docker-entrypoint.…"	 39 seconds ago      Up 38 seconds		80/tcp			 eager_driscoll
+5fdc4ef2619b	    postgres:alpine	"docker-entrypoint.s…"	 2 weeks ago	     Up 37 hours		0.0.0.0:5432->5432/tcp	 akipay_tokenizer_db_1
+9abc5bdefd96	    vault		"docker-entrypoint.s…"	 2 weeks ago	     Up 37 hours		0.0.0.0:8200->8200/tcp	 akipay_tokenizer_vault_1
+kayaondul@Kayas-MacBook-Air moocfi-docker % exit
+
+Script done on Tue Sep 22 23:13:51 2020
