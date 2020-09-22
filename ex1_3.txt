@@ -1,0 +1,12 @@
+Script started on Tue Sep 22 23:38:06 2020
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Kayas-MacBook-Air.local/Users/kayaondul/Documents/moocfi-docker[0m[27m[24m[Jkayaondul@Kayas-MacBook-Air moocfi-docker % [K[?2004hexitdocker ps -astop 8c df            d  docker run -d nginx[19Dexit               [15Ddocker ps -a[12Dexit        [8Ddocker run -d nginx              d  ddocker run -ıt deve opsdockeruh/pull? _e [Kxxercıse   ise[?2004l
+unknown shorthand flag: 'Ä' in -ıt
+See 'docker run --help'.
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Kayas-MacBook-Air.local/Users/kayaondul/Documents/moocfi-docker[0m[27m[24m[Jkayaondul@Kayas-MacBook-Air moocfi-docker % [K[?2004hdocker run -ıt devopsdockeruh/pull_exercise[K[A[79C[P[23Cxercise [A[49Cit devopsdockeruh/pull_exercise[A[50C[?2004l[1B
+[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Kayas-MacBook-Air.local/Users/kayaondul/Documents/moocfi-docker[0m[27m[24m[Jkayaondul@Kayas-MacBook-Air moocfi-docker % [K[?2004heexit[?2004l
+
+Script done on Tue Sep 22 23:38:55 2020

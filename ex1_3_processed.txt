@@ -1,0 +1,12 @@
+Script started on Tue Sep 22 23:38:06 2020
+xerciseul@Kayas-MacBook-Air moocfi-docker % docker runp-dcnginxexit	      docker ps -aexit	  docker run -ıtndevopsdockeruh/pull_e
+unknown shorthand flag: 'Ä' in -ıt
+See 'docker run --help'.
+xerciseuitKdevopsdockeruh/pull_exerciseer % docker run -ıt devopsdockeruh/pull_exercise
+Give me the password: basics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+kayaondul@Kayas-MacBook-Air moocfi-docker % exit
+
+Script done on Tue Sep 22 23:38:55 2020
