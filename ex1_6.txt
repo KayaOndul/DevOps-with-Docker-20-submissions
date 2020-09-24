@@ -1,0 +1,11 @@
+Script started on Thu Sep 24 21:30:14 2020
+kayaondul@Kayas-MacBook-Air moocfi-docker % docker run docker-clock
+
+-h,		--help			to show this message
+-a [age],	--adult [age]		to check if you're older than 18
+-c [time],	--clock [time]		to start a clock
+-t [size],	--triangle [size]	to draw a triangle, takes second argument as the size
+
+kayaondul@Kayas-MacBook-Air moocfi-docker % exit
+
+Script done on Thu Sep 24 21:30:35 2020
