@@ -1,0 +1,15 @@
+Script started on Fri Sep 25 00:21:22 2020
+Inputrwebsite:scurlerok-Air moocfi-docker % docker run docker-clockexec -it akipay_tokenizer_db_1 bash
+helsinki.fi
+Searching..
+helsinki.fi
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.helsinki.fi/">here</a>.</p>
+</body></html>
+kayaondul@Kayas-MacBook-Air moocfi-docker % exit
+
+Script done on Fri Sep 25 00:21:53 2020
