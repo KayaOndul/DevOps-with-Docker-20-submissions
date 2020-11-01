@@ -1,0 +1,48 @@
+Script started on Sun Nov  1 20:58:51 2020
+kayaondul@Kayas-MacBook-Air exercise1_6 % docker container stop 39593rmi 39593		 stop 39593ps	   container pruneps -a 	 exit	 docker run docker-clock -hbuild -t docker-clock .
+Sending build context to Docker daemon	3.072kB
+Step 1/2 : FROM devopsdockeruh/overwrite_cmd_exercise
+ ---> 3d2b622b1849
+Step 2/2 : CMD [ "/bin/bash"]
+ ---> Using cache
+ ---> 395932af5178
+Successfully built 395932af5178
+Successfully tagged docker-clock:latest
+kayaondul@Kayas-MacBook-Air exercise1_6 % docker run docker-clock
+
+-h,		--help			to show this message
+-a [age],	--adult [age]		to check if you're older than 18
+-c [time],	--clock [time]		to start a clock
+-t [size],	--triangle [size]	to draw a triangle, takes second argument as the size
+
+kayaondul@Kayas-MacBook-Air exercise1_6 % docker run docker-clock --clock 30
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+^C27
+^C28
+29
+kayaondul@Kayas-MacBook-Air exercise1_6 %
+kayaondul@Kayas-MacBook-Air exercise1_6 % exit
+
+Script done on Sun Nov	1 21:00:18 2020
