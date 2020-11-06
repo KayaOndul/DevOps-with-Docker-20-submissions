@@ -1,0 +1,62 @@
+Script started on Sun Nov  1 21:42:57 2020
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker ps -a
+CONTAINER ID	    IMAGE		COMMAND 		 CREATED	     STATUS		 PORTS			  NAMES
+51e52965bd89	    postgres:alpine	"docker-entrypoint.s…"	 2 weeks ago	     Up 32 hours	 0.0.0.0:5432->5432/tcp   akipay_tokenizer_db_1
+9abc5bdefd96	    vault		"docker-entrypoint.s…"	 2 months ago	     Up 5 days		 0.0.0.0:8200->8200/tcp   akipay_tokenizer_vault_1
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker images
+REPOSITORY			    TAG 		IMAGE ID	    CREATED		SIZE
+youtube-dl			    latest		4f609adda19b	    4 weeks ago 	201MB
+python				    3.8 		bbf31371d67d	    5 weeks ago 	882MB
+curler				    latest		e7878064fb1e	    5 weeks ago 	170MB
+docker-clocker			    latest		e7878064fb1e	    5 weeks ago 	170MB
+ubuntu				    16.04		c871c45b1573	    6 weeks ago 	127MB
+nginx				    latest		7e4d58f0e5f3	    7 weeks ago 	133MB
+sonarqube			    8.4.2-community	3287e6831017	    2 months ago	461MB
+sonarqube			    latest		3287e6831017	    2 months ago	461MB
+gradle				    6.6-jdk11		0791f1fb85fb	    2 months ago	680MB
+openzipkin/zipkin		    latest		1850194f377c	    2 months ago	160MB
+mongo				    latest		409c3f937574	    2 months ago	493MB
+python				    alpine		872c3118ec53	    2 months ago	42.7MB
+postgres			    11			31d22a1554df	    2 months ago	282MB
+postgres			    latest		b03968f50f0e	    2 months ago	313MB
+openjdk 			    11-jre-slim 	2be0fcbbbb6e	    2 months ago	204MB
+node				    12-alpine		18f4bc975732	    3 months ago	89.3MB
+vault				    latest		843dda5d35e1	    3 months ago	144MB
+nginx				    alpine		ecd67fe340f9	    3 months ago	21.6MB
+postgres			    alpine		17150f4321a3	    4 months ago	157MB
+devopsdockeruh/exec_bash_exercise   latest		c52ece77379e	    5 months ago	942MB
+gradle				    6.3-jdk11		0290cb9c9a7b	    6 months ago	677MB
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker rmi e7878 --force
+Untagged: curler:latest
+Untagged: docker-clocker:latest
+Deleted: sha256:e7878064fb1ebb88ac68528ce1bdf80de5835bc5d675dc088977ac1970744bb7
+Deleted: sha256:dc7a77cf14dd6f736ed021c5ea6c9df3c393a5e317bce129eb741ec364145b3e
+Deleted: sha256:ad27c33e633b2bb61de583983fe8a1d9187d1341ac0fe4833390aedc5ea36919
+Deleted: sha256:7f9847b01af10db97214c7d8008c5eb2efba4924b0aebf8ff959e3a0a24b346c
+Deleted: sha256:46166de28255a4514b7f90dd78fece2dce159709dd18588e9ed7967be7a1a896
+Deleted: sha256:6efbabbffdc1f415fcfb93e6eb82d09aae50494c985d3e053239dff8857dfa26
+Deleted: sha256:30b8fcd74fe8f595ee70735bbcb482d797f645b8b7fefad89832489e5c040e0c
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker rmi e7878 --forceimages
+REPOSITORY			    TAG 		IMAGE ID	    CREATED		SIZE
+youtube-dl			    latest		4f609adda19b	    4 weeks ago 	201MB
+python				    3.8 		bbf31371d67d	    5 weeks ago 	882MB
+ubuntu				    16.04		c871c45b1573	    6 weeks ago 	127MB
+nginx				    latest		7e4d58f0e5f3	    7 weeks ago 	133MB
+sonarqube			    8.4.2-community	3287e6831017	    2 months ago	461MB
+sonarqube			    latest		3287e6831017	    2 months ago	461MB
+gradle				    6.6-jdk11		0791f1fb85fb	    2 months ago	680MB
+openzipkin/zipkin		    latest		1850194f377c	    2 months ago	160MB
+mongo				    latest		409c3f937574	    2 months ago	493MB
+python				    alpine		872c3118ec53	    2 months ago	42.7MB
+postgres			    11			31d22a1554df	    2 months ago	282MB
+postgres			    latest		b03968f50f0e	    2 months ago	313MB
+openjdk 			    11-jre-slim 	2be0fcbbbb6e	    2 months ago	204MB
+node				    12-alpine		18f4bc975732	    3 months ago	89.3MB
+vault				    latest		843dda5d35e1	    3 months ago	144MB
+nginx				    alpine		ecd67fe340f9	    3 months ago	21.6MB
+postgres			    alpine		17150f4321a3	    4 months ago	157MB
+devopsdockeruh/exec_bash_exercise   latest		c52ece77379e	    5 months ago	942MB
+gradle				    6.3-jdk11		0290cb9c9a7b	    6 months ago	677MB
+kayaondul@Kayas-MacBook-Air exercise1_2 % exiter images rmi
+
+Script done on Sun Nov	1 21:44:20 2020
