@@ -62,7 +62,7 @@ Step 9/9 : ENTRYPOINT FRONT_URL=${FRONT_URL} npm start
 Successfully built a8a8a5dec661
 Successfully tagged backend2:latest
 kayaondul@Kayas-MacBook-Air backend % touchrlogs.txt
-kayaondul@Kayas-MacBook-Air backend % docker run -it -d --mount type=bind,source=${PWD}/logs.txt,target=/usr/app/logs.txt --name=back -p 8000:8000 backend2docker run -it -d --mount type=bind,source=${PWD}/logs.txt,target=/usr/app/logs.txt --name=back -p 8000:8000 backend2
+kayaondul@Kayas-MacBook-Air backend % docker run -it -d --mount type=bind,source=${PWD}/logs.txt,target=/usr/app/logs.txt --name=back -p 8000:8000 backend2
 ce8864646c3ca812e97239b6c91fe256e185db8d83d320d81847b85cd49cc9a5
 kayaondul@Kayas-MacBook-Air backend % cd ../frontend/
 kayaondul@Kayas-MacBook-Air frontend % docker run -it -d -p 5000:5000 --name=fronbackend2 .
