@@ -1,0 +1,82 @@
+Script started on Mon Nov  9 00:15:32 2020
+kayaondul@Kayas-MacBook-Air exercise1_14 % docker buildp-t0ruby10. ruby
+Sending build context to Docker daemon	3.072kB
+Step 1/9 : FROM ruby:2.6.0
+ ---> ef8778f370d5
+Step 2/9 : RUN apt-get update && apt-get install -y nodejs
+ ---> Using cache
+ ---> 516831a1e7c1
+Step 3/9 : RUN apt-get update && apt-get install -y git
+ ---> Using cache
+ ---> 9b769eba2ef4
+Step 4/9 : RUN git clone https://github.com/docker-hy/rails-example-project.git
+ ---> Using cache
+ ---> bb8e080c2c3d
+Step 5/9 : WORKDIR /rails-example-project
+ ---> Using cache
+ ---> 9dd563ddea0f
+Step 6/9 : RUN gem install bundler
+ ---> Using cache
+ ---> e8052efa602b
+Step 7/9 : RUN bundle update --bundler && bundle install
+ ---> Using cache
+ ---> ac7a6da7d251
+Step 8/9 : RUN bundle exec rails db:migrate
+ ---> Using cache
+ ---> a15bfab72a71
+Step 9/9 : CMD bundle exec rails s
+ ---> Using cache
+ ---> 7df27139f821
+Successfully built 7df27139f821
+Successfully tagged ruby1:latest
+y1yaondul@Kayas-MacBook-Air exercise1_14 % docker run --rm -p 3000:3000 rub
+=> Booting Puma
+=> Rails 5.2.2.1 application starting in development
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.0 (ruby 2.6.0-p0), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://0.0.0.0:3000
+Use Ctrl-C to stop
+Started GET "/presses/new" for 172.17.0.1 at 2020-11-08 21:16:23 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+   (0.2ms)  SELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC
+  ↳ /usr/local/bundle/ruby/2.6.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PressesController#new as HTML
+   (3.0ms)  SELECT COUNT(*) FROM "presses"
+  ↳ app/controllers/presses_controller.rb:18
+  Rendering presses/new.html.erb within layouts/application
+  Rendered presses/_form.html.erb (24.3ms)
+  Rendered presses/new.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 1232ms (Views: 1023.0ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/presses" for 172.17.0.1 at 2020-11-08 21:16:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PressesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnngqDRD88MO7VHh/MycwaUsUrM/XuDeVhppEEdgiVdQBB1v1ju+65tO7OzcRvfMa/1IcPPRAEd7savObH/aiw==", "commit"=>"Press"}
+   (0.2ms)  begin transaction
+  ↳ app/controllers/presses_controller.rb:31
+  Press Create (0.8ms)	INSERT INTO "presses" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", "2020-11-08 21:16:27.473914"], ["updated_at", "2020-11-08 21:16:27.473914"]]
+  ↳ app/controllers/presses_controller.rb:31
+   (21.7ms)  commit transaction
+  ↳ app/controllers/presses_controller.rb:31
+Redirected to http://localhost:3000/presses/new
+Completed 302 Found in 49ms (ActiveRecord: 22.6ms)
+
+
+Started GET "/presses/new" for 172.17.0.1 at 2020-11-08 21:16:27 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PressesController#new as HTML
+   (0.3ms)  SELECT COUNT(*) FROM "presses"
+  ↳ app/controllers/presses_controller.rb:18
+  Rendering presses/new.html.erb within layouts/application
+  Rendered presses/_form.html.erb (2.8ms)
+  Rendered presses/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 68ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+kayaondul@Kayas-MacBook-Air exercise1_14 % exit
+
+Script done on Mon Nov	9 00:16:46 2020
