@@ -1,6 +1,0 @@
-Script started on Fri Nov  6 16:48:08 2020
-kayaondul@Kayas-MacBook-Air moocfi-docker % docker run -d -p 80:80 devopsdockeruh/ports_exercisedevopsdockeruh/ports_exercise
-3e0f83b7f9faa13d298da3c35bba1c2a8aff5a3061e7bc937c545e0fe606befd
-kayaondul@Kayas-MacBook-Air moocfi-docker % exit
-
-Script done on Fri Nov	6 16:48:31 2020
