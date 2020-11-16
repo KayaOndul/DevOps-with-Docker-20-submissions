@@ -1,0 +1,10 @@
+Script started on Mon Nov 16 13:32:23 2020
+
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+arto@tiikeri:~$ 
+kayaondul@Kayas-MacBook-Air exercise1_2 % docker ps -a
+
+Script done on Mon Nov	16 13:33:58 2020
