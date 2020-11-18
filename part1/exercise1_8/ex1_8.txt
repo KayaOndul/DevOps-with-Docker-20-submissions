@@ -1,5 +1,5 @@
 Script started on Fri Nov  6 14:58:34 2020
-kayaondul@Kayas-MacBook-Air exercise1_8 % touch logs.txt && docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercisetouch logs.txt && docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
+kayaondul@Kayas-MacBook-Air exercise1_8 % touch logs.txt && docker run -v $(pwd)/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise
 Wrote to file /usr/app/logs.txt
 Wrote to file /usr/app/logs.txt
 Wrote to file /usr/app/logs.txt
