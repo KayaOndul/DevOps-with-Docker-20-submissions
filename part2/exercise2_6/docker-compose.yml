@@ -1,0 +1,28 @@
+version: '3.5'  
+
+services: 
+  backend: 
+    image: backend
+    ports: 
+      - 8000:8000
+    environment:
+      - REDIS=redis
+      - REDIS_PORT=6379
+      - DB_USERNAME=example
+      - DB_PASSWORD=example
+      - DB_HOST=db
+    depends_on:
+      - db
+    restart: unless-stopped
+  frontend:
+    image: frontend
+    ports: 
+      - 5000:5000
+  redis:
+    image: "redis:alpine"
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=example
+      - POSTGRES_PASSWORD=example
